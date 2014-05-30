@@ -39,16 +39,16 @@
         - uwsgi
 
     - name: symlink imaging library files
-      action: file src=/usr/lib/x86_64-linux-gnu/libfreetype.so dest=/usr/lib/libfreetype.so state=link
+      action: file src=/usr/lib/x86_64-linux-gnu/libfreetype.so dest=/usr/lib/libfreetype.so state=link force=yes
 
     - name: symlink imaging library files
-      action: file src=/usr/lib/x86_64-linux-gnu/libz.so dest=/usr/lib/libz.so state=link
+      action: file src=/usr/lib/x86_64-linux-gnu/libz.so dest=/usr/lib/libz.so state=link force=yes
 
     - name: symlink imaging library files
-      action: file src=/usr/lib/x86_64-linux-gnu/libjpeg.so.62 dest=/usr/lib/x86_64-linux-gnu/libjpeg.so state=link
+      action: file src=/usr/lib/x86_64-linux-gnu/libjpeg.so.62 dest=/usr/lib/x86_64-linux-gnu/libjpeg.so state=link force=yes
 
     - name: symlink imaging library files
-      action: file src=/usr/lib/x86_64-linux-gnu/libjpeg.so dest=/usr/lib/libjpeg.so state=link
+      action: file src=/usr/lib/x86_64-linux-gnu/libjpeg.so dest=/usr/lib/libjpeg.so state=link force=yes
 
     - name: remove default nginx site
       action: file path=/etc/nginx/sites-enabled/default state=absent

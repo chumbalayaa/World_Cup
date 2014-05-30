@@ -5,8 +5,8 @@
   sudo: True
 
   vars:
-    app_name: hello_flask
-    repo_url: https://github.com/mattupstate/ansible-tutorial.git
+    app_name: worldcup
+    repo_url: https://github.com/chums923/World_Cup
     repo_remote: origin
     repo_version: master
     webapps_dir: /srv/webapps
