@@ -18,6 +18,7 @@ def getTeams():
     response = unirest.get("http://api.espn.com/v1/sports/soccer/fifa.world/teams",
         params = {'apikey': 'gdkr4pnmhes2nf963mj5wxyd'}
     )
+    return response
 
 @app.route('/')
 def index():
