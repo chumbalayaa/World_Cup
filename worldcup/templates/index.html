@@ -1,12 +1,6 @@
-<html>
-  <head>
-    {% if title %}
-    <title>{{title}} - FIFA by Chums</title>
-    {% else %}
-    <title>Welcome to FIFA</title>
-    {% endif %}
-  </head>
+{% extends "layout.html" %}
+{% block content %}  
   <body>
       <p>{{json}}</p>
   </body>
-</html>
+{% endblock %}
