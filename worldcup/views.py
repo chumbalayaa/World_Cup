@@ -14,4 +14,4 @@ def getWorldCupInfo():
 @app.route('/')
 def index():
     json = getWorldCupInfo()
-    return render_template('index.html', json=json)
+    return render_template('index.html', json=json.body)
