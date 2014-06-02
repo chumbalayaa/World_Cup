@@ -2,72 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Starter Template for Bootstrap</title>
+  <title>Starter Template for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="/static/css/bootstrap.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="/static/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Add custom CSS here -->
-    <link href="/static/css/simple-sidebar.css" rel="stylesheet">
-    <link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Add custom CSS here -->
+  <link href="/static/css/simple-sidebar.css" rel="stylesheet">
+  <link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <div id="wrapper">
+  <div id="wrapper">
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#">Start Bootstrap</a>
-                </li>
-                <li><a href="#">Groups</a>
-                </li>
-                <li><a href="#">Teams</a>
-                </li>
-                <li><a href="#">Players</a>
-                </li>
-            </ul>
-        </div>
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand"><a href="#">Start Bootstrap</a>
+        </li>
+        <li><a href="#">Groups</a>
+        </li>
+        <li><a href="/teams/">Teams</a>
+        </li>
+        <li><a href="#">Players</a>
+        </li>
+      </ul>
+    </div>
 
-        <!-- Page content -->
-        <div id="page-content-wrapper">
-            <div class="content-header">
-                <h1>
-                    <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
-                    FIFA 2014
-                </h1>
-            </div>
-            <!-- Keep all page content within the page-content inset div! -->
-            <div class="page-content inset">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="lead">Stuff here</p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="well">More stuff</p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="well">Just chillin on some stuff</p>
-                    </div>
-                    <div class="col-md-4">
-                        <p class="well">Soccer is cool</p>
-                    </div>
-                    <div class="col-md-4">
-                        <p class="well">Yes</p>
-                    </div>
-                    <div class="col-md-4">
-                        <p class="well">Hanging out</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    {% block content %}
+
+    {% endblock %}
 
     </div>
 
@@ -78,8 +49,8 @@
     <!-- Custom JavaScript for the Menu Toggle -->
     <script>
     $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("active");
+      e.preventDefault();
+      $("#wrapper").toggleClass("active");
     });
     </script>
 </body>

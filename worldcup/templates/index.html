@@ -1,6 +1,35 @@
 {% extends "layout.html" %}
 {% block content %}  
-  <body>
-      <p>{{json}}</p>
-  </body>
+  <!-- Page content -->
+  <div id="page-content-wrapper">
+      <div class="content-header">
+          <h1>
+              <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
+              FIFA 2014
+          </h1>
+      </div>
+      <!-- Keep all page content within the page-content inset div! -->
+      <div class="page-content inset">
+          <div class="row">
+              <div class="col-md-12">
+                  <p class="lead">Stuff here</p>
+              </div>
+              <div class="col-md-6">
+                  <p class="well">More stuff</p>
+              </div>
+              <div class="col-md-6">
+                  <p class="well">Just chillin on some stuff</p>
+              </div>
+              <div class="col-md-4">
+                  <p class="well">Soccer is cool</p>
+              </div>
+              <div class="col-md-4">
+                  <p class="well">Yes</p>
+              </div>
+              <div class="col-md-4">
+                  <p class="well">Hanging out</p>
+              </div>
+          </div>
+      </div>
+  </div>
 {% endblock %}
