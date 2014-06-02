@@ -14,7 +14,12 @@ def getWorldCupInfo():
     )
     return response
 
+def getTeams():
+    response = unirest.get("http://api.espn.com/v1/sports/soccer/fifa.world/teams",
+        params = {'apikey': 'gdkr4pnmhes2nf963mj5wxyd'}
+    )
+
 @app.route('/')
 def index():
-    json = getWorldCupInfo()
+    json = getTeams()
     return render_template('index.html', json=json.body)
