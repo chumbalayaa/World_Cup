@@ -20,7 +20,11 @@ def getTeams():
     )
     return response
 
-@app.route('/teams/')
+@app.route('/')
 def index():
+    return render_template('index.html')
+
+@app.route('/teams/')
+def teams():
     json = getTeams()
     return render_template('teams.html', json=json.body)
