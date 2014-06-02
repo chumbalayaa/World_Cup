@@ -2,6 +2,8 @@
 {% block content %}  
   <h3>World Cup 2014 Teams</h3>
   <div>
-    <p>{{json}}</p>
+    {% for js in json %}
+    <p>{{js['name']}}</p>
+    {% endfor %}
   </div>
 {% endblock %}

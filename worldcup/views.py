@@ -27,4 +27,4 @@ def index():
 @app.route('/teams/')
 def teams():
     json = getTeams()
-    return render_template('teams.html', json=json.body)
+    return render_template('teams.html', json=json.body['sports'][0]['leagues'][0]['teams'])
